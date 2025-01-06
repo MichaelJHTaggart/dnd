@@ -52,3 +52,56 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+## Good Colors for campaigns:
+
+Blue:
+backgroundColor: "#1a2c3d"
+textColor: "#e6f1ff"
+
+backgroundColor: "#2B4F81"
+textColor: "#C7E6FF"
+
+backgroundColor: "#193C5D"
+textColor: "#B8E2F2"
+
+backgroundColor: "#1E4D6B"
+textColor: "#A7D8DE"
+
+backgroundColor: "#1f2d3d"
+textColor: "#ffffff"
+
+
+Purple:
+
+backgroundColor: "#2d1f3d"
+textColor: "#ffffff"
+
+backgroundColor: "#553C67"
+textColor: "#F7E8FF"
+
+Green:
+backgroundColor: "#1f3d2c"
+textColor: "#ffffff"
+
+backgroundColor: "#2C5530"
+textColor: "#E2F0CB"
+
+backgroundColor: "#1f3d1f"
+textColor: "#ffffff"
+
+Red:
+backgroundColor: "#2a0f0f"
+textColor: "#ffffff"
+
+backgroundColor: "#3d1f1f"
+textColor: "#ffffff"
+
+Orange:
+backgroundColor: "#8B4513"
+textColor: "#FFE5B4"
+
+Dirt:
+backgroundColor: "#8B7355"
+textColor: "#FFE5A3"
