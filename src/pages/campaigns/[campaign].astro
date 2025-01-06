@@ -1,0 +1,132 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CampaignHeader from '../../components/CampaignHeader.astro';
+import PlayerRoster from '../../components/PlayerRoster.astro';
+import SessionCard from '../../components/SessionCard.astro';
+import CharacterGraveyard from '../../components/CharacterGraveyard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const campaigns = await getCollection('campaigns');
+  return campaigns.map(campaign => ({
+    params: { campaign: campaign.slug },
+    props: { campaign },
+  }));
+}
+
+const { campaign } = Astro.props;
+const { Content } = await campaign.render();
+
+// Get all sessions for this campaign
+const sessions = await getCollection('sessions', ({ data }) => {
+  return data.campaign === campaign.slug;
+});
+
+// Sort sessions by date, most recent first
+const sortedSessions = sessions.sort((a, b) => 
+  b.data.date.getTime() - a.data.date.getTime()
+);
+---
+
+<Layout title={campaign.data.title}>
+  <main style={`background-color: ${campaign.data.backgroundColor || '#2a2a2a'}; color: ${campaign.data.textColor || '#ffffff'}`}>
+    <div class="container">
+      <CampaignHeader campaign={campaign} />
+
+      <div class="campaign-content">
+        <Content />
+      </div>
+
+      {campaign.data.players && campaign.data.players.length > 0 && (
+        <PlayerRoster players={campaign.data.players} />
+      )}
+
+      {campaign.data.fallenHeroes && campaign.data.fallenHeroes.length > 0 && (
+        <CharacterGraveyard 
+          fallenHeroes={campaign.data.fallenHeroes}
+          backgroundColor={campaign.data.backgroundColor}
+          textColor={campaign.data.textColor}
+        />
+      )}
+
+      <section class="sessions">
+        <h2>Session Chronicles</h2>
+        <div class="timeline">
+          <div class="line"></div>
+          <div class="session-grid">
+            {sortedSessions.map(session => (
+              <SessionCard session={session} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .campaign-content {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .sessions {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .sessions h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(to right, #ff6b6b, #ffd93d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(255, 107, 107, 0.4);
+  }
+
+  .timeline {
+    position: relative;
+  }
+
+  .line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, 
+      rgba(33, 150, 243, 0.5),
+      rgba(33, 150, 243, 0)
+    );
+    transform: translateX(-50%);
+  }
+
+  .session-grid {
+    display: grid;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    .line {
+      left: 20px;
+    }
+  }
+</style>

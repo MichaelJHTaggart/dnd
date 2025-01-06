@@ -1,0 +1,61 @@
+---
+import type { Player } from '../types/player';
+import PlayerCard from './PlayerCard.astro';
+
+interface Props {
+  players: Player[];
+}
+
+const { players } = Astro.props;
+---
+
+<section class="players-section">
+  <h2>The Party</h2>
+  <div class="player-grid" style={`--player-count: ${players.length}`}>
+    {players.map(player => (
+      <PlayerCard player={player} />
+    ))}
+  </div>
+</section>
+
+<style>
+  .players-section {
+    margin: 4rem 0;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(to right, #ff6b6b, #ffd93d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .player-grid {
+    display: grid;
+    /* Calculate the minimum width based on number of players */
+    grid-template-columns: repeat(var(--player-count), minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  /* Responsive breakpoints */
+  @media (max-width: 1200px) {
+    .player-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    .player-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .player-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

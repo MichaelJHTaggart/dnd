@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import SessionLayout from '../../layouts/SessionLayout.astro';
+
+export async function getStaticPaths() {
+  const sessions = await getCollection('sessions');
+  return sessions.map(session => ({
+    params: { 
+      slug: `${session.data.campaign}/${session.slug}`
+    },
+    props: { session },
+  }));
+}
+
+const { session } = Astro.props;
+const { Content } = await session.render();
+
+// Get the campaign data
+const campaigns = await getCollection('campaigns');
+const campaign = campaigns.find(c => c.slug === session.data.campaign);
+
+if (!campaign) {
+  throw new Error(`Campaign not found: ${session.data.campaign}`);
+}
+---
+
+<SessionLayout session={session} campaign={campaign}>
+  <Content />
+</SessionLayout>

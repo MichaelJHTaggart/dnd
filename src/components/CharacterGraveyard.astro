@@ -1,0 +1,204 @@
+---
+import type { FallenCharacter } from '../types/player';
+
+interface Props {
+  fallenHeroes: FallenCharacter[];
+  backgroundColor?: string;
+  textColor?: string;
+}
+
+const { fallenHeroes, backgroundColor, textColor } = Astro.props;
+
+if (!fallenHeroes || fallenHeroes.length === 0) return null;
+---
+
+<section class="character-graveyard">
+  <details>
+    <summary>
+      <h2>Fallen Heroes</h2>
+      <span class="toggle-icon">▼</span>
+    </summary>
+    <div class="fallen-content">
+      <div class="fallen-grid">
+        {fallenHeroes.map(hero => (
+          <article class="fallen-hero">
+            <div class="portrait">
+              {hero.portrait ? (
+                <img src={hero.portrait} alt={hero.name} />
+              ) : (
+                <div class="placeholder-portrait">
+                  {hero.name.charAt(0)}
+                </div>
+              )}
+            </div>
+            <div class="hero-info">
+              <h3>{hero.name}</h3>
+              <p class="class-race">Level {hero.level} {hero.race} {hero.class}</p>
+              <p class="player">Played by {hero.playerName}</p>
+              <p class="death-date">
+                Fell on {new Date(hero.deathDate).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric'
+                })}
+              </p>
+              <p class="cause">{hero.causeOfDeath}</p>
+              {hero.quote && <blockquote>"{hero.quote}"</blockquote>}
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </details>
+</section>
+
+<style>
+  .character-graveyard {
+    margin: 4rem 0;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+  }
+
+  details {
+    width: 100%;
+  }
+
+  summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    user-select: none;
+    transition: opacity 0.3s ease;
+  }
+
+  summary:hover {
+    opacity: 0.9;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .toggle-icon {
+    font-size: 0.8em;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  details[open] .toggle-icon {
+    transform: rotate(180deg);
+  }
+
+  .fallen-content {
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  details[open] .fallen-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    background: linear-gradient(to right, #ff6b6b, #ffd93d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(255, 107, 107, 0.4);
+    transition: transform 0.3s ease;
+  }
+
+  summary:hover h2 {
+    transform: scale(1.02);
+  }
+
+  .fallen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .fallen-hero {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .fallen-hero:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .portrait {
+    height: 200px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .placeholder-portrait {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+    color: white;
+  }
+
+  .hero-info {
+    padding: 1.5rem;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #64b5f6, #2196f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .class-race {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+
+  .player, .death-date {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin: 0.25rem 0;
+  }
+
+  .cause {
+    margin: 1rem 0;
+    font-style: italic;
+    opacity: 0.8;
+  }
+
+  blockquote {
+    margin: 1rem 0 0;
+    padding: 0.5rem 1rem;
+    border-left: 3px solid #ff6b6b;
+    font-style: italic;
+    opacity: 0.9;
+    background: rgba(255, 255, 255, 0.05);
+  }
+</style>

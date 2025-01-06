@@ -1,0 +1,104 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  campaign: CollectionEntry<'campaigns'>;
+}
+
+const { campaign } = Astro.props;
+const { title, description, startDate, image } = campaign.data;
+
+const formattedDate = new Date(startDate).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long'
+});
+---
+
+<header class="campaign-header">
+  {image && <div class="banner" style={`background-image: url(${image})`} />}
+  <div class="content">
+    <h1>{title}</h1>
+    <p class="description">{description}</p>
+    <div class="meta">
+      <span class="date">Started {formattedDate}</span>
+      <span class="status" data-status={campaign.data.status}>
+        {campaign.data.status.charAt(0).toUpperCase() + campaign.data.status.slice(1)}
+      </span>
+    </div>
+  </div>
+</header>
+
+<style>
+  .campaign-header {
+    position: relative;
+    margin-bottom: 3rem;
+  }
+
+  .banner {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.7) 100%);
+    border-radius: 1rem;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    background: linear-gradient(to right, #ff6b6b, #ffd93d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(255, 107, 107, 0.4);
+  }
+
+  .description {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 1rem auto;
+  }
+
+  .meta {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .date {
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+
+  .status {
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .status[data-status="active"] {
+    background: rgba(46, 213, 115, 0.2);
+    color: #2ed573;
+  }
+
+  .status[data-status="completed"] {
+    background: rgba(255, 71, 87, 0.2);
+    color: #ff4757;
+  }
+</style>

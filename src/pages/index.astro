@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import CampaignStats from '../components/CampaignStats.astro';
+import CampaignList from '../components/CampaignList.astro';
+import { getCollection } from 'astro:content';
+
+const campaigns = await getCollection('campaigns');
+const sessions = await getCollection('sessions');
+
+// Get session count for each campaign
+const sessionCounts = sessions.reduce((acc, session) => {
+  acc[session.data.campaign] = (acc[session.data.campaign] || 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
+
+// Filter campaigns by status
+const activeCampaigns = campaigns.filter(campaign => campaign.data.status === 'active');
+const completedCampaigns = campaigns.filter(campaign => campaign.data.status === 'completed');
+const plannedCampaigns = campaigns.filter(campaign => campaign.data.status === 'planned');
+
+const totalSessions = Object.values(sessionCounts).reduce((a, b) => a + b, 0);
+---
+
+<Layout title="D&D Campaign Journal">
+  <main>
+    <Hero />
+    <CampaignStats campaigns={campaigns} totalSessions={totalSessions} />
+    
+    {activeCampaigns.length > 0 && (
+      <CampaignList 
+        campaigns={activeCampaigns}
+        sessionCounts={sessionCounts}
+        title="Active Adventures"
+      />
+    )}
+
+    {completedCampaigns.length > 0 && (
+      <CampaignList 
+        campaigns={completedCampaigns}
+        sessionCounts={sessionCounts}
+        title="Past Adventures"
+      />
+    )}
+
+    {plannedCampaigns.length > 0 && (
+      <CampaignList 
+        campaigns={plannedCampaigns}
+        sessionCounts={sessionCounts}
+        title="Upcoming Adventures"
+      />
+    )}
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 2rem;
+    width: 1200px;
+    max-width: calc(100% - 2rem);
+    color: white;
+  }
+</style>

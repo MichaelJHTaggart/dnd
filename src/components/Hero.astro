@@ -1,0 +1,108 @@
+---
+import { Image } from 'astro:assets';
+
+---
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>
+      <span class="welcome">Welcome to your</span>
+      <span class="title">D&D Chronicles</span>
+    </h1>
+    <p class="subtitle">Record your epic adventures and memorable moments</p>
+  </div>
+  <div class="dice-animation">
+    <div class="d20"></div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a0f30 0%, #3a1f65 100%);
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/grid.png');
+    opacity: 0.1;
+    pointer-events: none;
+  }
+
+  .hero-content {
+    text-align: center;
+    z-index: 1;
+  }
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0;
+  }
+
+  .welcome {
+    font-size: 1.5rem;
+    color: #b69eff;
+    font-weight: normal;
+  }
+
+  .title {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff6b6b, #ffd93d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(255, 107, 107, 0.4);
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    color: #d4c1ff;
+    margin-top: 1rem;
+  }
+
+  .d20 {
+    width: 100px;
+    height: 100px;
+    background: url('/d20.svg') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(-50%) rotate(0deg); }
+    50% { transform: translateY(-60%) rotate(10deg); }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      min-height: 40vh;
+    }
+
+    .title {
+      font-size: 2.5rem;
+    }
+
+    .d20 {
+      width: 60px;
+      height: 60px;
+    }
+  }
+</style>

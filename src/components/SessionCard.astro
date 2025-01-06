@@ -1,0 +1,112 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  session: CollectionEntry<'sessions'>;
+}
+
+const { session } = Astro.props;
+const { title, date, description, highlights } = session.data;
+
+const formattedDate = new Date(date).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+
+const sessionUrl = `/sessions/${session.data.campaign}/${session.slug}`;
+---
+
+<a href={sessionUrl} class="session-card">
+  <article>
+    <div class="content">
+      <header>
+        <time datetime={date.toISOString()}>{formattedDate}</time>
+        <h3>{title}</h3>
+      </header>
+      <p>{description}</p>
+      {highlights && (
+        <ul class="highlights">
+          {highlights.map(highlight => (
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+                <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/>
+              </svg>
+              {highlight}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </article>
+</a>
+
+<style>
+  .session-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 2rem;
+  }
+
+  article {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+  }
+
+  .session-card:hover article {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .content {
+    flex-grow: 1;
+  }
+
+  time {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #64b5f6, #2196f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    margin: 1rem 0;
+    line-height: 1.6;
+  }
+
+  .highlights {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+  }
+
+  .highlights li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    opacity: 0.9;
+  }
+
+  .highlights svg {
+    opacity: 0.7;
+  }
+</style>

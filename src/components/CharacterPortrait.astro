@@ -1,0 +1,66 @@
+---
+import type { Player } from '../types/player';
+
+interface Props {
+  player: Player;
+}
+
+const { player } = Astro.props;
+---
+
+<div class="character-portrait">
+  {player.character.portrait ? (
+    <img src={player.character.portrait} alt={player.character.name} />
+  ) : (
+    <div class="placeholder-portrait">
+      <span class="initial">{player.character.name.charAt(0)}</span>
+      <span class="name">{player.character.name}</span>
+    </div>
+  )}
+</div>
+
+<style>
+  .character-portrait {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .character-portrait:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .placeholder-portrait {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .initial {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #64b5f6, #2196f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .name {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+</style>

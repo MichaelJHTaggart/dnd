@@ -1,0 +1,52 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  campaigns: CollectionEntry<'campaigns'>[];
+  totalSessions: number;
+}
+
+const { campaigns, totalSessions } = Astro.props;
+---
+
+<div class="stats">
+  <div class="stat">
+    <span class="number">{campaigns.length}</span>
+    <span class="label">Active Campaigns</span>
+  </div>
+  <div class="stat">
+    <span class="number">{totalSessions}</span>
+    <span class="label">Total Sessions</span>
+  </div>
+</div>
+
+<style>
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 2rem 0 4rem;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .number {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #64b5f6, #2196f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .label {
+    font-size: 1rem;
+    color: #a0a0a0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+</style>

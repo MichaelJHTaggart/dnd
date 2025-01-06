@@ -1,0 +1,51 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import CampaignCard from './CampaignCard.astro';
+
+interface Props {
+  campaigns: CollectionEntry<'campaigns'>[];
+  sessionCounts: Record<string, number>;
+  title: string;
+}
+
+const { campaigns, sessionCounts, title } = Astro.props;
+---
+
+<section class="campaign-section">
+  <h2>{title}</h2>
+  <div class="campaign-grid">
+    {campaigns.map(campaign => (
+      <CampaignCard 
+        campaign={campaign}
+        sessionCount={sessionCounts[campaign.slug] || 0}
+      />
+    ))}
+  </div>
+</section>
+
+<style>
+  .campaign-section {
+    margin-top: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: linear-gradient(to right, #64b5f6, #2196f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .campaign-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .campaign-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
