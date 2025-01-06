@@ -1,13 +1,15 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import SessionNavigation from '../../../components/SessionNavigation.astro';
 
 export async function getStaticPaths() {
   const sessions = await getCollection('sessions');
+  
   return sessions.map(session => ({
     params: { 
       campaign: session.data.campaign,
-      session: session.slug 
+      session: session.slug
     },
     props: { session },
   }));
@@ -20,25 +22,22 @@ const { Content } = await session.render();
 const campaigns = await getCollection('campaigns');
 const campaign = campaigns.find(c => c.slug === session.data.campaign);
 
-// Add navigation back to campaign
-const campaignUrl = `/campaigns/${session.data.campaign}`;
+if (!campaign) {
+  throw new Error(`Campaign not found: ${session.data.campaign}`);
+}
+
+// Get all sessions for navigation
+const allSessions = await getCollection('sessions');
 ---
 
 <Layout title={session.data.title}>
   <main style={`background-color: ${campaign?.data.backgroundColor || '#2a2a2a'}; color: ${campaign?.data.textColor || '#ffffff'}`}>
     <div class="container">
       <nav class="breadcrumb">
-        <a href={campaignUrl}>← Back to Campaign</a>
+        <a href={`/campaigns/${session.data.campaign}`}>← Back to Campaign</a>
       </nav>
       <article class="session-content">
         <header>
-          <time datetime={session.data.date.toISOString()}>
-            {session.data.date.toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            })}
-          </time>
           <h1>{session.data.title}</h1>
           {session.data.highlights && (
             <ul class="highlights">
@@ -50,6 +49,11 @@ const campaignUrl = `/campaigns/${session.data.campaign}`;
         </header>
         <Content />
       </article>
+
+      <SessionNavigation 
+        currentSession={session}
+        allSessions={allSessions}
+      />
     </div>
   </main>
 </Layout>
