@@ -2,6 +2,8 @@
 import type { CollectionEntry } from 'astro:content';
 import Layout from './Layout.astro';
 import CharacterPortrait from '../components/CharacterPortrait.astro';
+import SessionNavigation from '../components/SessionNavigation.astro';
+import { getCollection } from 'astro:content';
 
 interface Props {
   session: CollectionEntry<'sessions'>;
@@ -9,6 +11,9 @@ interface Props {
 }
 
 const { session, campaign } = Astro.props;
+
+// Get all sessions for navigation
+const allSessions = await getCollection('sessions');
 ---
 
 <Layout title={session.data.title}>
@@ -39,8 +44,9 @@ const { session, campaign } = Astro.props;
             <h1>{session.data.title}</h1>
           </header>
 
-          <h2>Recap:</h2>
           <slot />
+
+          <SessionNavigation currentSession={session} allSessions={allSessions} />
         </article>
 
         {campaign.data.players && campaign.data.players.length > 0 && (
@@ -107,12 +113,6 @@ const { session, campaign } = Astro.props;
     background: linear-gradient(to right, #64b5f6, #2196f3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-
-  h2 {
-    font-size: 2rem;
-    margin: 2rem 0 1rem;
-    color: #64b5f6;
   }
 
   .left-portraits, .right-portraits {

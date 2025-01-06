@@ -1,0 +1,10 @@
+---
+title: "Regroup"
+campaign: "the-dark-powers"
+date: 2024-11-14
+description: "Our party regroups prior to their next adventure"
+---
+
+In the town of Barovia we arrive at an inn. The inn is named, Blood on the Vine. It's very old, paint on the sign has worn away. Indie the inn, are 4 gentleman wearing dublets (tunics) with silver ravens pinned to the front. Kigee doesn't notice as she's in pain, however they stare at her. Diedrik introduces everyone, and Abraham says "Its an honor to meet me, my name is Abraham". The group retires for the night with plans to buy kigee new clothes in the morning. While we rest, Abraham slips out the window of his room to hunt for his food. He eats a Hyena and manages to avoid being caught by a scarecrow. He returns to his room and rests for the night. In the early morning, Thalindra heads to the shop to try and find clothes, and realizes she's a broke ass Witch. About at this time, Abraham arrives in the store to find a wide brimmed hat, and finds Thalindra, who confesses she cannot afford the common clothes. Abraham helps her buy the clothes, and the return to the inn. On the way, people stare at Thalindra, as Dragonborns have never been seen before. Thalindra gives Kigee the clothes (potato sacks), and she comes out like "ehh" but then her uncle and cousins (the 4 men) come out and chew her out for losing the cart of wine, telling her that her father demands her presence back at home. Kigee has a full meltdown about how she's going to be disowned. Diedrik is awoken by the commotion, and comes out commenting about how nice the potato sacks looks. Abraham comes out and asks if she's chosen a life of poverty, and she flips out. Strahd takes her to the tailor and gets her a couple sets of clothes, before we discuss next steps.
+
+We agree to head to the armory back at the Castle Ravenloft, with plans to head to Van Richten's Tower, while Kigee visits her family. Strahd drops 300g on the table for supplies, the group splits it 75gp each. We got lots of stuff, and meet at the Inn in the evening to see Strahd before heading back to the castle overnight. 

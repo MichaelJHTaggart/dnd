@@ -1,0 +1,119 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  currentSession: CollectionEntry<'sessions'>;
+  allSessions: CollectionEntry<'sessions'>[];
+}
+
+const { currentSession, allSessions } = Astro.props;
+
+// Filter sessions for the same campaign and sort by date
+const campaignSessions = allSessions
+  .filter(session => session.data.campaign === currentSession.data.campaign)
+  .sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+
+// Find current session index
+const currentIndex = campaignSessions.findIndex(session => session.slug === currentSession.slug);
+
+// Get previous and next sessions
+const previousSession = currentIndex > 0 ? campaignSessions[currentIndex - 1] : null;
+const nextSession = currentIndex < campaignSessions.length - 1 ? campaignSessions[currentIndex + 1] : null;
+---
+
+<nav class="session-navigation">
+  <div class="nav-links">
+    {previousSession && (
+      <a href={`/sessions/${previousSession.data.campaign}/${previousSession.slug}`} class="prev">
+        <span class="arrow">←</span>
+        <span class="text">
+          <span class="label">Previous Session</span>
+          <span class="title">{previousSession.data.title}</span>
+        </span>
+      </a>
+    )}
+    
+    {nextSession && (
+      <a href={`/sessions/${nextSession.data.campaign}/${nextSession.slug}`} class="next">
+        <span class="text">
+          <span class="label">Next Session</span>
+          <span class="title">{nextSession.data.title}</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+    )}
+  </div>
+</nav>
+
+<style>
+  .session-navigation {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    flex: 1;
+    max-width: 300px;
+  }
+
+  a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .prev {
+    margin-right: auto;
+  }
+
+  .next {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+  }
+
+  .label {
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
+
+  .title {
+    font-weight: 500;
+  }
+
+  .arrow {
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+
+  @media (max-width: 640px) {
+    .nav-links {
+      flex-direction: column;
+    }
+
+    a {
+      max-width: none;
+    }
+  }
+</style>

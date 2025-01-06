@@ -1,0 +1,10 @@
+---
+title: "Battle of the Pumpkins"
+campaign: "the-dark-powers"
+date: 2024-12-19
+description: "Our party finds and destroys the pumpkins"
+---
+
+We stumble across vine-wrapped, pumpkin headed scarecrows with fire in their insides, dancing around a limp body, and we stand about 50 ft away. Music is heard, although we can't tell the origin. Kigee sneaks up to about 20 ft away from the 3 pumpkin heads and sees a gaggle of Satyrs playing music, and 10 normal scarecrows. Kigee signals the number of enemies, and Abraham shoots as he rushes forwards, he notices his damage doesn't seem to hit as much as it should. Diedrik attempts to bite the one Abraham shot and crits! They notice the fire that was inside of the pumpkin ones, is actually just light instead. As Thalindra casts Fire Bolt, she notices that fire hurts extra good.
+
+Abraham becomes so scared that he pees himself, lol kidding. he's paralyzed. Diedrik rushes forward and grabs Strahd to get him to safety. Thalindra notices that the Satyrs are still playing music, seemingly doing some sort of a magical ritual. The final pumpkin head sacrifices itself to turn the other 10 into pumpkin heads! Kigee shoots a Satyr down to 1 hp, before the ritual completes. Vines constrict the Satyrs and suck the life down, killing the injured one. 9 of the pumpkin heads light up. Thalindra misses her next firebolt and one of the dead trees in the area catches fire. The 9 lit up pumpkin heads begin to merge together, with the dull one looking on sadly. Thalindra misses again and lights 6 trees on fire. Kigee panicks and realizes she can't put out the fire, then flies straight up. The fire catches in a ring around the mass and it sinks into the ground. The lone scarecrow approaches Thalindra and asks to join the party. Kigee joins up with Thalindra, and squaks in disagreement while aiming her crossbow at the pumpkin head that now stands with us. Diedrik just healed Strahd, standing a ways away (Diedrik had been fleeing with Strahd when the fight ended), but close enough that Abraham called out the threat had passed, and for diedrik to respond that Strahd is standing.

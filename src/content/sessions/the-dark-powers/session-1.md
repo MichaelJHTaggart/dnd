@@ -1,22 +1,9 @@
 ---
 title: "Into the Mists"
 campaign: "the-dark-powers"
-date: 2024-01-15
-description: "Our party finds themselves drawn into the mysterious land of Barovia"
+date: 2024-09-12
+description: "Our party finds themselves all living in the mysterious land of Barovia"
 ---
 
-As the group walks, heading for Van Richten's Tower. Kigee has a moment with Diedrik, and they apologize for their part in their previous fight. As they talk, Kigee sees some movement, and Abraham checks it out. The creature jumps up and tries to shoot a needle at Abraham but misses. Kigee kills the one that went for Abraham, and 13 of them jump up and all shoot Kigee, causing her to fall unconscious. 
-
-The fight commences, the plant people perish easily, but their needles pack a heck of a punch. Diedrik casts a spell to stabilize and save her life, before covering her unconscious body with his own. The plant people turn their attention to Diedrik, and take him out as well. Abraham takes a stand and attracts the attention on him, taking out many of them while also tanking majority of the damage to protect everyone.
-
-Strahd saves Diedrik, and Diedrik saves Kigee, who breaks her hand crossbow as she stands. Diedrik notes that as the last creature flees, we are covered in pollen. It appears that it will attract the violence of future plants. Thalindra washes the pollen off of all of us, and we continue on.
-
-As we walk, Kigee asks Abraham about how he became a vampire. Strahd admits that he has a wish spell, his last wish spell, in a ring and offers it to Abraham, who immediately uses it to turn human. Woah. After an emotional moment, we continue on.
-
-As we pass the Old Bonegrinder, feeling evil and death, we learn of the lore behind the hags and human meat pies, and wonder if we should burn the building. Diedrik scopes it out in his wolf form, and he startles the homeless family that has been using it as a home. Kigee tries to play it off that he's a pup, but fails to pacify the family, so we let them be.
-
-We get to the top of a hill and see Vallaki ahead, but also see it is nearly sunrise. So we make a cute picnic and watch the sun rise, eating rabbits from Abraham's hat and drinking Kigee's family wine, enjoying life.
-
-Until the mist returns, and the rain comes. We move onto Vallaki, with Diedrik in his human form. As we approach, we learn that the guards are requiring blood tests, as there was a werewolf attack recently. We retreat suspiciously because we suck, and discuss why that could be. Possibly the wolves were chased out of the forest by plants, or they were charmed to attack once they got into the city, we aren't sure.
-
-The group decides to continue to Argynvastholt, while Kigee does a quick trip to her family's home to warn them about the blood test, with promise to meet as the group arrives at Argynvastholt. As Kigee flies away, she is struck by lightning and falls to the ground, unconscious. The rest of the group arrives at Argynvastholt, and pulls out some everburning torches.
+200 people town called Tinzk, new town founded after Strahd dead, situated on the border of a forest, next to the Luna river. To the south a shortways is another body of water. It has been 100 years since Strahd von Zarovich has been killed. We are in the land of Barovia. Since the death of Strahd, the mist in the area is easing. The sky is no longer full of clouds. Land is recovering and things are turning green. The horrors of the land remain. One doesn't travel outside at night. There are werewolves, scarecrows, and more. Most of the people that live here are human. Warforged is not allowed. Allowance for lycanthropy, only exist as wereRaven or werewolf. Raven is a specific family you can marry into but not out of. Secret people. Overlooking the town and across the river is a large ruined castle. Home of the silver dragon and knights, Strahd killed everyone and zombified the dragon. Powers of the land are still alive, There is a god of the land St. Markovia. Barovian and Vistani (gypsy) type of humans. Since Strahd's demise, the gypsy folk have begun settling down in permanent camps near big cities. Vistani are considered in high regard. If a different race, need to be a failed adventurer brought to Brovia. Possibly giving you further knowledge of other gods or stories. Age appropriate of 17 or 18. Regular town teens. 
+WereRavens; [family name];Group of people that run a winery, only people who could grow grapes, because they have a magic item to prevent the withering of crops. Rich family. Historically they are spies. 3 forms. Full human, full raven, and hybrid. "sell-spies" played on both sides of good and evil.
