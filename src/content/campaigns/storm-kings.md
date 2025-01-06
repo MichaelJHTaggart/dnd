@@ -2,7 +2,7 @@
 title: "Storm King's Thunder"
 description: "Giants terrorize the Sword Coast as an ancient prophecy unfolds"
 startDate: 2024-03-15
-image: "/campaigns/storm.jpg"
+image: ""
 backgroundColor: "#1f2d3d"
 textColor: "#ffffff"
 status: "planned"

@@ -2,7 +2,7 @@
 title: "Rime of the Frostmaiden"
 description: "Brave the eternal winter of Icewind Dale in this chilling arctic adventure"
 startDate: 2024-03-01
-image: "/campaigns/frostmaiden.jpg"
+image: ""
 backgroundColor: "#1a2c3d"
 textColor: "#e6f1ff"
 status: "completed"
