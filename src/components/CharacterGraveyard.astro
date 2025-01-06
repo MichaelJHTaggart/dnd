@@ -1,5 +1,6 @@
 ---
 import type { FallenCharacter } from '../types/player';
+import { formatDate } from '../utils/dateUtils';
 
 interface Props {
   fallenHeroes: FallenCharacter[];
@@ -36,11 +37,7 @@ if (!fallenHeroes || fallenHeroes.length === 0) return null;
               <p class="class-race">Level {hero.level} {hero.race} {hero.class}</p>
               <p class="player">Played by {hero.playerName}</p>
               <p class="death-date">
-                Fell on {new Date(hero.deathDate).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                })}
+                Fell on {formatDate(hero.deathDate)}
               </p>
               <p class="cause">{hero.causeOfDeath}</p>
               {hero.quote && <blockquote>"{hero.quote}"</blockquote>}

@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { formatDate } from '../utils/dateUtils';
 
 interface Props {
   session: CollectionEntry<'sessions'>;
@@ -8,12 +9,7 @@ interface Props {
 const { session } = Astro.props;
 const { title, date, description, highlights } = session.data;
 
-const formattedDate = new Date(date).toLocaleDateString('en-US', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric'
-});
-
+const formattedDate = formatDate(date);
 const sessionUrl = `/sessions/${session.data.campaign}/${session.slug}`;
 ---
 

@@ -4,6 +4,7 @@ import Layout from './Layout.astro';
 import CharacterPortrait from '../components/CharacterPortrait.astro';
 import SessionNavigation from '../components/SessionNavigation.astro';
 import { getCollection } from 'astro:content';
+import { formatDate } from '../utils/dateUtils';
 
 interface Props {
   session: CollectionEntry<'sessions'>;
@@ -35,11 +36,7 @@ const allSessions = await getCollection('sessions');
         <article class="session-content">
           <header>
             <time datetime={session.data.date.toISOString()}>
-              {session.data.date.toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })}
+              {formatDate(session.data.date)}
             </time>
             <h1>{session.data.title}</h1>
           </header>

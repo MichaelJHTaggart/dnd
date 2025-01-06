@@ -7,11 +7,14 @@ interface Props {
 }
 
 const { campaigns, totalSessions } = Astro.props;
+
+// Only count active campaigns
+const activeCampaigns = campaigns.filter(campaign => campaign.data.status === 'active');
 ---
 
 <div class="stats">
   <div class="stat">
-    <span class="number">{campaigns.length}</span>
+    <span class="number">{activeCampaigns.length}</span>
     <span class="label">Active Campaigns</span>
   </div>
   <div class="stat">

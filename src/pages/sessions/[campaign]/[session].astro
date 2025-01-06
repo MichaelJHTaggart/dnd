@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import SessionNavigation from '../../../components/SessionNavigation.astro';
+import { formatDate } from '../../../utils/dateUtils';
 
 export async function getStaticPaths() {
   const sessions = await getCollection('sessions');
@@ -38,6 +39,9 @@ const allSessions = await getCollection('sessions');
       </nav>
       <article class="session-content">
         <header>
+          <time datetime={session.data.date.toISOString()}>
+            {formatDate(session.data.date)}
+          </time>
           <h1>{session.data.title}</h1>
           {session.data.highlights && (
             <ul class="highlights">
