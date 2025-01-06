@@ -1,21 +1,25 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
+import SessionLayout from '../../../layouts/SessionLayout.astro';
 import { getCollection } from 'astro:content';
 import SessionNavigation from '../../../components/SessionNavigation.astro';
 import { formatDate } from '../../../utils/dateUtils';
+import { sequence } from 'astro:middleware';
 
 export async function getStaticPaths() {
   const sessions = await getCollection('sessions');
   
-  return sessions.map(session => ({
-    params: { 
-      campaign: session.data.campaign,
-      session: session.slug
-    },
-    props: { session },
-  }));
+  return sessions.map(session => {
+    const sessionName = session.slug.split('/').pop();
+    
+    return {
+      params: { 
+        campaign: session.data.campaign,
+        session: sessionName
+      },
+      props: { session },
+    };
+  });
 }
-
 const { session } = Astro.props;
 const { Content } = await session.render();
 
@@ -31,36 +35,9 @@ if (!campaign) {
 const allSessions = await getCollection('sessions');
 ---
 
-<Layout title={session.data.title}>
-  <main style={`background-color: ${campaign?.data.backgroundColor || '#2a2a2a'}; color: ${campaign?.data.textColor || '#ffffff'}`}>
-    <div class="container">
-      <nav class="breadcrumb">
-        <a href={`/campaigns/${session.data.campaign}`}>← Back to Campaign</a>
-      </nav>
-      <article class="session-content">
-        <header>
-          <time datetime={session.data.date.toISOString()}>
-            {formatDate(session.data.date)}
-          </time>
-          <h1>{session.data.title}</h1>
-          {session.data.highlights && (
-            <ul class="highlights">
-              {session.data.highlights.map(highlight => (
-                <li>{highlight}</li>
-              ))}
-            </ul>
-          )}
-        </header>
-        <Content />
-      </article>
-
-      <SessionNavigation 
-        currentSession={session}
-        allSessions={allSessions}
-      />
-    </div>
-  </main>
-</Layout>
+<SessionLayout session={session} campaign={campaign}>
+  <Content />
+</SessionLayout>
 
 <style>
   .container {

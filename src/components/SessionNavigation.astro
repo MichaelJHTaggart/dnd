@@ -19,12 +19,18 @@ const currentIndex = campaignSessions.findIndex(session => session.slug === curr
 // Get previous and next sessions
 const previousSession = currentIndex > 0 ? campaignSessions[currentIndex - 1] : null;
 const nextSession = currentIndex < campaignSessions.length - 1 ? campaignSessions[currentIndex + 1] : null;
+
+// Helper function to get the session name without campaign prefix
+const getSessionName = (slug: string) => {
+  const parts = slug.split('/');
+  return parts[parts.length - 1];
+};
 ---
 
 <nav class="session-navigation">
   <div class="nav-links">
     {previousSession && (
-      <a href={`/sessions/${previousSession.data.campaign}/${previousSession.slug}`} class="prev">
+      <a href={`/sessions/${previousSession.data.campaign}/${getSessionName(previousSession.slug)}`} class="prev">
         <span class="arrow">←</span>
         <span class="text">
           <span class="label">Previous Session</span>
@@ -34,7 +40,7 @@ const nextSession = currentIndex < campaignSessions.length - 1 ? campaignSession
     )}
     
     {nextSession && (
-      <a href={`/sessions/${nextSession.data.campaign}/${nextSession.slug}`} class="next">
+      <a href={`/sessions/${nextSession.data.campaign}/${getSessionName(nextSession.slug)}`} class="next">
         <span class="text">
           <span class="label">Next Session</span>
           <span class="title">{nextSession.data.title}</span>
