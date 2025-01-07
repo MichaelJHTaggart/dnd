@@ -30,7 +30,7 @@ players:
       race: "Dragonborn"
       level: 2
       quote: "*strange event happens* Cool, let's follow it."
-      portrait: "/campaigns/thalindra2.png"
+      portrait: "/campaigns/thalindra.png"
   - name: "b1ueh4wk"
     character:
       name: "Diedrik Lukresh"
