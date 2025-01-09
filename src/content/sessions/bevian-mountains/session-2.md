@@ -13,12 +13,12 @@ The patrol brings them to a "village", but the adventurers see the empty barren 
 
 The adventurers meet with the leader Finnick who fittingly is a finnick fox. He tells the adventurers his story. 
 
-"All of these foothills that you see before you used to be my forest. My friends, my family, and all of the magic stored in the crystals were destroyed. Everyone besides those in this village I was able to save. We have been surviving for years to create the village that we have. During this great travesty the Ice Giants from the south also moved into the mountains to claim the mountain."
+"All of these foothills that you see before you used to be my forest. My friends, my family, and all of the magic stored in the crystals were destroyed. Everyone besides those in this village I was able to save. We have been surviving for years to create the village that we have. During this great travesty the Ice Giants from the south also moved into the mountains to claim the mountains from the dwarves."
 
 The adventurers are offered significant gold to go find the dwarves who have been displaced by the Ice Giants, and to immediately return and report to Finnick of their whereabouts. 
 
-They are taken to the shop of "The Black Bandit" for their journey. An Black Racoon with beady greedy eyes sells them items. He attempts to gouge the adventurours for 3x the prices. Finnick learns of this, and has a messenger make The Black Bandit give the excess money back to the adventurers. 
+They are taken to the shop of "The Black Bandit" for their journey. A fully black racoon with beady greedy eyes sells them their desired items. He attempts to gouge the adventurours for 3x the prices. Finnick learns of this, and has a messenger inform the black bandit that he must give the excess money back to the adventurers. 
 
-The adventurers see that the village has significant combat training.
+Before leaving the adventurers see that the village has significant combat training courses for their inhabitants.
 
 The adventurers set off on their journey to find the dwarves.
