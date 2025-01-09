@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Icewind Dale"
-campaign: "rime-frostmaiden"
+campaign: "the-journey"
 date: 2024-03-01
 description: "First steps into the frozen north"
 highlights: [
