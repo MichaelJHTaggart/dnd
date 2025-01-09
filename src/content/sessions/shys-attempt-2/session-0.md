@@ -1,6 +1,6 @@
 ---
 title: "The Calm Before"
-campaign: "storm-kings"
+campaign: "shys-attempt-2"
 date: 2024-03-15
 description: "Strange giant activity brings our heroes together"
 ---
