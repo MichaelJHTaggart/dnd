@@ -2,7 +2,7 @@
 title: "The Journey among the Bevian Mountains"
 description: "Heroes stumble upon a lost city in need of their help"
 startDate: 2020-04-29
-image: "/campaigns/bevianMountain.jpg"
+image: "/campaigns/bevianMountains.jpg"
 backgroundColor: "#1f2d3d"
 textColor: "#ffffff"
 status: "completed"

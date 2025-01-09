@@ -1,13 +1,8 @@
 ---
-title: "Welcome to Icewind Dale"
-campaign: "rime-frostmaiden"
-date: 2024-03-01
-description: "First steps into the frozen north"
-highlights: [
-  "Arrived in Ten-Towns",
-  "Met the locals of Bryn Shander",
-  "Learned about the eternal winter"
-]
+title: "The Foothills - Intro"
+campaign: "bevian-mountains"
+date: 2020-04-29
+description: "The setting of the campaign"
 ---
 
 You have been searching out a place in need of your skills for employment. You have just exited the frozen tundra of Xxar, and entered into an aired land that has steep hills and mountains. You believe that you may have arrived in the outskirts of Svedala due to the landscape. Unfortunately, you haven't heard much said about the inhabitants and the news of this land. However, you have been told that the town centre of Svedala is bustling with work, and is always in need of someone of your skills.

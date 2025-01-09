@@ -3,7 +3,7 @@ title: "The Journey"
 description: "Heroes stumble upon a lost city in need of their help"
 startDate: 2021-03-10
 image: "/campaigns/the-journey-map.png"
-backgroundColor: "#1f2d3d"
+backgroundColor: "#1f3d2c"
 textColor: "#ffffff"
 status: "completed"
 players:
