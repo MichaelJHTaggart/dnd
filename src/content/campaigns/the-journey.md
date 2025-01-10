@@ -57,13 +57,13 @@ fallenHeroes:
     deathDate: 2021-11-20
     causeOfDeath: "Died a heroic death in an epic battle against a villian, saving Toes and Abernath."
   - playerName: "Erik"
-    name: "Dwarf"
+    name: "Gilford"
     class: "Cleric?"
     race: "Dwarf"
     level: 5
     quote: "Thoughtful, and prudent"
     deathDate: 2021-12-02
-    causeOfDeath: "After killing some innocent shop keepers, was killed by a famed wizard who claimed to have served 'justice'."
+    causeOfDeath: "After killing some innocent shop attendants who attempted to raise the alarm of their shop keeper being killed by Sadi, was killed by a famed wizard who claimed to have served 'justice'."
   - playerName: "Erik"
     name: "Leon"
     class: "Paladin"
@@ -72,6 +72,14 @@ fallenHeroes:
     quote: "Thoughtful, and prudent"
     deathDate: 2021-06-16
     causeOfDeath: "Parted ways with the party due to a conflict of beliefs."
+  - playerName: "Guest"
+    name: "Sadi"
+    class: "Sorcerer"
+    race: "Human"
+    level: 3
+    quote: "My character thinks what he is doing is good so his alignment is good."
+    deathDate: 2021-12-02
+    causeOfDeath: "For no aparant reason whatsoever killed a shop keeper doing a deal with Sadi to buy the boat from him that he murdered a father and son to get, was tracked down and killed by a famed wizard who claimed to have served 'justice' by killing him."
 ---
 
 Our heroes start in a bustling city, but after they are captured and attempted to be made slaves they make tracks across the Tauran Kingdom, and uncover a plot to overthrow the Kingdom; They end up rescuing a colony of creations (Pig People) from the shadow realm and settle down with the pig people.
