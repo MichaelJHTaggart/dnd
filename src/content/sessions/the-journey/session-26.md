@@ -1,0 +1,8 @@
+---
+title: "Justice served for Murder"
+campaign: "the-journey"
+date: 2021-12-09
+description: "A powerful wizard chases down the heroes and kills those who murdered his friends"
+---
+
+As Toes and Abernath discuss what to do with their future and newfound fortune, they realize that they are stuck for the time being in this realm. As they sort out their situation, a wonderful scent leads us cartoon style to a tent that had color and light spilling from it. Here, we are greeted by a human woman named Arowana and a human fighter named Jude. They feed Abernath and Toes while sharing stories of how they arrived here, while the two fill their gut. A storm begins outside, signaling the end of our dinner. Abernath steps outside to see the lightning and rain, while Arowana mothers Toes with stories of her past. Jude moves outside and annoys Abernath. After some time, they go to bed in Arowana's tent. In the morning, or at least what feels to be morning, Arowana wakes early and cooks breakfast, setting aside a separate plate for Toes. After more time of learning each other (and Toes' secret), attempting to leave until seeing the hole leads to Neth (creepy booger world that has a giant eye in the sky), the group packs up and travels in the area, and Toes notices the world begins to look like home. She get's excited as she realizes they're approaching Fuath's court, where they cusp a hill and see a wounded creature. It ends up being the spirit of Shepley, who is trapped in the realm and begs for our help to free him. So we set forth, heading towards the wall and the ghosts that prevent him from climbing over, where the group learns Fuath is the reason why Shepley has turned this way... Toes feels betrayed...
