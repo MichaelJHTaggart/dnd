@@ -1,0 +1,8 @@
+---
+title: "Justice served for Murder"
+campaign: "the-journey"
+date: 2021-12-02
+description: "A powerful wizard chases down the heroes and kills those who murdered his friends"
+---
+
+Greenford runs up to Abernath and Toes, and drops his disguise, POOF, it's actually Sadi! Gilford is still invisible, and Sadi blames Gilford for mass murder back at the general store. We hear and see a bundle of Paladins racing our way to arrest us, with the wizard of the magic shop following after them. Toes takes off running for the boat we didn't end up selling (wonder why), Abernath flies in the air, Gilford (still invisible) moves towards the boat, and Sadi is staying in place with a readied action (90 ft). Sadi realizes his buddies are gone and he starts running for the boat. Toes undoes the ropes and Abernath pushes the boat out into the water. Sadi and Gilford make it on to the boat, Gilford rows and Abernath keeps pushing with the Fly spell. The paladins start catching up, the wizard is chasing just out of reach, all hope once again seems lost.. As a last ditch effort, Abernath grabs Toes and tries to fly her to safety and abandon Sadi and Gilford to face the conquences of their actions. Gilford took exception and dispelled magic to send Abernath and Toes into the cold sea! Gilford tried to grab for the two, but the water was proven to be too great an enemy. Abernath pulls out his portal hole and lays it on the surface of the water, pulling Toes into the Shadow Realm. Sadi and Gilford dive in and scuffle with who we learn is one of the three brothers, although we didnt get his name... He ends up murdering Sadi and Gilford, and walks away leaving Abernath and Toes alone in the Shadow Realm...

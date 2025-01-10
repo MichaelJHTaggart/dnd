@@ -14,7 +14,7 @@ players:
       race: "Harengon"
       level: 6
       quote: "Liked the shiny rock that ."
-      portrait: ""
+      portrait: "/campaigns/toes.png"
   - name: "Erik"
     character:
       name: "Arowana"
@@ -25,7 +25,7 @@ players:
       portrait: "/campaigns/rayna.png"
   - name: "UJ"
     character:
-      name: "Finwick Longshanks"
+      name: "Abernath"
       class: "Wizard"
       race: "Human"
       level: 6
@@ -38,8 +38,8 @@ fallenHeroes:
     race: "Human"
     level: 3
     quote: "I am Shepley"
-    deathDate: 2022-10-31
-    causeOfDeath: "After being tortured by Fuath for entertainment and cursed, he was driven as a werewolf and killed."
+    deathDate: 2021-07-21
+    causeOfDeath: "After being Cursed with lyncathropy for Fuath's entertainment, Shepley ended up dying as a werewolf."
   - playerName: "Erik"
     name: "Destius"
     class: "Blood Hunter"
@@ -63,7 +63,15 @@ fallenHeroes:
     level: 3
     quote: "Thoughtful, and prudent"
     deathDate: 2022-10-31
-    causeOfDeath: "Died a heroic death in an epic battle against a villian, saving Toes and Abernath."
+    causeOfDeath: "Died at the hand of one of the famed 3 brothers."
+  - playerName: "Erik"
+    name: "Leon"
+    class: "Paladin"
+    race: "Lion"
+    level: 3
+    quote: "Thoughtful, and prudent"
+    deathDate: 2021-06-16
+    causeOfDeath: "Parted ways with the party due to a conflict of beliefs."
 ---
 
 You have been searching out a place in need of your skills for adventuring employment. You have just exited the frozen tundra of Xxar, and entered into an aired land that has steep foothills and the looming Bevian mountains ahead.
