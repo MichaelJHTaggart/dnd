@@ -14,12 +14,12 @@ players:
       race: "Harengon"
       level: 6
       quote: "Liked the shiny rock that ."
-      portrait: "/campaigns/adrius.png"
-  - name: "Sierra"
+      portrait: ""
+  - name: "Erik"
     character:
-      name: "Rayna Falion"
-      class: "Ranger"
-      race: "Elf"
+      name: "Arowana"
+      class: "Cleric"
+      race: "The"
       level: 6
       quote: "Quiet and perceptive."
       portrait: "/campaigns/rayna.png"
@@ -31,6 +31,39 @@ players:
       level: 6
       quote: "Lorem Ipsum."
       portrait: ""
+fallenHeroes:
+  - playerName: "Colin"
+    name: "Shepley"
+    class: "Ranger"
+    race: "Human"
+    level: 3
+    quote: "I am Shepley"
+    deathDate: 2022-10-31
+    causeOfDeath: "After being tortured by Fuath for entertainment and cursed, he was driven as a werewolf and killed."
+  - playerName: "Erik"
+    name: "Destius"
+    class: "Blood Hunter"
+    race: "Human"
+    level: 1
+    quote: "Talks to his sword"
+    deathDate: 2021-03-31
+    causeOfDeath: "Died a horrific and sudden death from a poison entirely too powerful to be in the game."
+  - playerName: "Erik"
+    name: "Horris"
+    class: "Evocation Wizard"
+    race: "Yuan-Ti Pureblood"
+    level: 3
+    quote: "Thoughtful, and prudent"
+    deathDate: 2022-10-31
+    causeOfDeath: "Died a heroic death in an epic battle against a villian, saving Toes and Abernath."
+  - playerName: "Erik"
+    name: "Dwarf"
+    class: "th"
+    race: "Dwarf"
+    level: 3
+    quote: "Thoughtful, and prudent"
+    deathDate: 2022-10-31
+    causeOfDeath: "Died a heroic death in an epic battle against a villian, saving Toes and Abernath."
 ---
 
 You have been searching out a place in need of your skills for adventuring employment. You have just exited the frozen tundra of Xxar, and entered into an aired land that has steep foothills and the looming Bevian mountains ahead.

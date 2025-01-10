@@ -26,7 +26,7 @@ players:
   - name: "UJ"
     character:
       name: "Finwick Longshanks"
-      class: "Wizard"
+      class: "Cleric"
       race: "Human"
       level: 6
       quote: "Lorem Ipsum."
