@@ -1,0 +1,20 @@
+---
+title: "Families and Relatives"
+campaign: "the-dark-powers"
+date: 2025-01-23
+description: "The heroes save Kigee's Family and learns about Thalindra's"
+---
+
+We awaken in the morning and meet Diedrik's new kitty, Nova, and it heals! They decide to stop by Kigee's home and find it covered in vines, theyre going in through the windows and destroying the home. There is no movement or sound, and Kigee begins to panic as she returns to the group and drops back into human form. The vines appear to be strangling the house, including the grapes on the vines. Diedrik casts "locate animals or plants" to try and find Needle Blight's.
+
+While the spell is being cast and Kigee is freaking out, Abraham notices small black feathery figures are attached to the thorns around the home, as though they've been pierced. He points it out to Kigee, who collapses to the ground in tears. 
+
+The spell is cast and picks up the plant 3ft below his feet and each one of his companions. The vines burst from the ground and impaling Thalindra and Kigee, causing Thalindra to be paralyzed. Archie the centaur appears and harasses us, enjoying the "show" provided as we suffer seemingly by his hands. Abraham shoots Archie, but he heals! Strahd mentions that the birds are likely only paralyzed, not dead. So we run around and collect all the birds before they perish, and discuss next steps. Kigee admits there's a storage of magic items also in the basement, which is probably a big problem. Strahd says that it's likely the vines would be stronger thanks to the magic. Archie is pissy and poofs into a pile of leaves. Kigee realizes her parents are missing, and makes the call that they must enter the home. Kigee searches for a safe way to get into the home, and when she returns, Thalindra is no longer paralyzed. We take the birds with us and head inside.
+
+Kigee leads the group to the room where the magic items are stored, but big vines block the entrance. Deidrik attempts to cast a spell to push the vines back. Thalindra has Dopey try to tear a hole through the vines. Abraham sees that lighting the green vines on fire will be pointless. Kigee takes off to the most likely place they are at, her father's study. They are playing with buttons. She ushers them outside. All the heroes notice that the building begins to groan under the stress of the vines, and flee the building. The Martikov family mourns the loss of the buttons and make plans to rebuild closer to the distillery. Kigee gives her parents the seed, and informs them of Vallaki's blood tests. 
+
+We say goodbye and decide to move onto Van Richten's tower. As we arrive, we see the doors are blasted open again. Abraham warns that there may be traps, and we all move in carefully. We see an open rap door at the top, and Abraham leads the way through the door, into a kitchen/alchemy area. There is a roaring fire within a fire place. No logs are being used, except a large golden broken egg. Thalindra feels nostalgic but can't place why she feels that way. 
+
+Abraham continues to lead the way up into another room, a main living quarters with a bed/bookshelves and a workbench. Also, an iron bound chest that is locked. Abraham picks the lock and opens it to see 4 potions, intricate/ornate hand crossbow, and a book in another language that Abraham can't read. He steps back and Thalindra looks inside. She discovers she can read the book, and that it was given to her from her parents. She gifts the crossbow to Kigee. The entire party sees a vision of Van Richten caring for the egg of a dragon man, who wanted to make sure Strahd died.
+
+After an awkward moment, we search the rest of the tower, before Kigee makes her way outside to test the crossbow. She finds that it shoots fire, catches a tree on fire and shouts for help. Thalindra comes out and dowses the flames with magic. Thalindra and Kigee return inside and Thalindra's book together.
