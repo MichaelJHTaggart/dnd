@@ -1,5 +1,5 @@
 ---
-title: "Fights, Miracles, and Shy's rolls"
+title: "Trees and Seeds"
 campaign: "the-dark-powers"
 date: 2025-01-09
 description: "Trees and seeds"
