@@ -1,0 +1,12 @@
+---
+title: "A Family at the Lake"
+campaign: "the-journey"
+date: 2021-03-08
+description: "The hero's travel great distances to escape the slavers."
+---
+
+The heroes cross the mountains and encounter some wild animals on their journey. They encounter an old man who gives them some direction of where to go for the safest path. He tells them to avoid the feywild the "White Crystal Forest". He let's them know that if they desire adventure that the ruins of Wintergulch possibly has hidden treasures for them to uncover. The heroes take heart and make Wintergulch their destination. They set out down the mountains. 
+
+As they pass a lake they find a happy scene of a family having a fun day at the lake. It is a beautiful sunny day, and there is fishing, laughing, and children playing in the water. The heroes hail them in their happy scene. The family are a bit uncertain as they look at the dangerous and capable group, but are swayed by the friendly smiles and disarming manners of Shepley who puts their fears at ease swiftly. While in good spirits for a few moments Abernath asks them if they would like any help catching fish, and that he would be happy to oblige with magic. The father of the family smiles warmly and says that it would be most welcome. Abernath goes to the waters edge and waits for a fish to swim up to the surface or jump out of the water. Within moments it happens; Suddenly the sky darkens and a great bell tolls solemnly in the air as he stretches forth a finger pointing at the fish exlaiming,"It is your turn to DIE!". The fish seems to blacken and floats to the surface, dead. 
+
+The happiness and joy that was in the air vanishes with silence. The children in the water look frightened, and run out of the water screaming to their mothers. The father and other adults looks grim, and unhappy. Shepley facepalms. Destius looks unpretrubed. Leaving the dead blackened fish in the water, Shepley does his best to save what mood is left for the family by quickly giving excuses of needing to leave immediately. The adults of the group nod grimly. Without fanfare they leave the family with the sounds of mutters of disapproval and anxiety in their wake. Abernath and Destius oblivious to anything wrong with what occurred, Sheply just sighing, shouldering his pack, and shaking his head leads the group on. 
