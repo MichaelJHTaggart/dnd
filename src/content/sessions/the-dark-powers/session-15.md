@@ -1,5 +1,5 @@
 ---
-title: "Baba Lysaga return"
+title: "Baba Lysaga returns"
 campaign: "the-dark-powers"
 date: 2025-02-14
 description: "The heroes save innocent lives."
